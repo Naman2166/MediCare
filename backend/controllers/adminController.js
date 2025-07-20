@@ -3,7 +3,7 @@
 
 
 import validator from "validator"             //it's a middleware that checks if the data send by user is correct or not ( like checking if an email is really an email, or if a password is strong enough.(eg validator.isEmail(value)) , validator.isStrongPassword(value) )
-import bcrypt from "bcrypt"                   // bcrypt is a tool that encrypt password (ie changes the password into secret code ie hash [eg naman123 => $2b$10D9]) so that they are safe and secure when saved in database and it also compares password when user logs in 
+import bcrypt from "bcryptjs"                   // bcrypt is a tool that encrypt password (ie changes the password into secret code ie hash [eg naman123 => $2b$10D9]) so that they are safe and secure when saved in database and it also compares password when user logs in 
 import {v2 as cloudinary} from "cloudinary"   // cloudinary is a cloud service used to upload and store images or videos , get URLs to use in our website/app
 import doctorModel from "../models/doctorModel.js"
 import jwt from 'jsonwebtoken'                //it is used for authentication and authorization in web apps.(ie JWT is a small piece of data that proves who you are. It’s like an ID card that a website gives you after you log in.[we send JWT with every request and server checks it to know that it's us(ie authorized user)])

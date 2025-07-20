@@ -2,7 +2,7 @@
 //time 2 :- 9 hr 27 min
 
 import validator from 'validator'
-import bcrypt from 'bcrypt'
+import bcrypt from 'bcryptjs'
 import userModel from '../models/userModel.js'
 import jwt from 'jsonwebtoken'                       //jwt:- json web token (it's a way to securely send data between client and server) , It’s mostly used for authentication — like when a user logs in.
 import {v2 as cloudinary} from 'cloudinary'
