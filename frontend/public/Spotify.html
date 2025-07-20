@@ -1,0 +1,219 @@
+<!-- 
+
+[ github upload steps ] :-
+- create repository in github (eg spotify-clone) , and open folder(which we want to upload in github) in VScode
+- open terminal
+1) git init
+2) git add README.Md (optional)
+3) git add -A
+4) git commit -m "responsive spotify-clone using HTML CSS"                     //write any message
+5) git branch -M main
+6) git remote add origin https://github.com/Naman2166/Spotify-clone            //enter the URL of created repository
+7) git push -u origin main  (or)  git push -u origin main --force 
+
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Spotify.css">
+    <!-- font awesome font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--spotify logo-->
+    <link rel="icon" type="image/png" href="./assets(spotify)/logo.png">
+    <title>Spotify - By Naman</title>
+    <!--google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+       
+        <!-- sidebar -->
+        <div class="sidebar">
+            
+            <div class="navbar">
+                <div class="nav-option" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">HOME</a>
+                </div>
+                <div class="nav-option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">SEARCH</a>
+                </div>
+            </div>
+            
+            <div class="library">
+
+                <div class="lib-upper">
+                    <div class="lib-title">
+                        <img src="./assets(spotify)/library_icon.png">
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="lib-icon">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <div class="lib-lower">
+                    <div class="box">
+                        <div class="box-p1">Hi Naman !!</div>
+                        <div class="box-p2">Create your first playlist</div>
+                        <button class="badge">Create Playlist</button>
+                    </div>
+                </div>
+
+                <div class="lib-logo">
+                    <img src="./assets(spotify)/logo.png" style="height: 40px; width: 40px;">
+                    <h2>Spotify</h2>
+                </div>
+            </div>
+            
+        </div>
+        
+        
+        <!-- main-content -->
+        <div class="main-content">
+
+            <div class="sticky-nav">
+
+                <div class="sticky-nav-arrow">
+                   <img src="./assets(spotify)/backward_icon.png">
+                   <img src="./assets(spotify)/forward_icon.png">
+                </div>
+
+                <!-- <div><img src="./assets(spotify)/logo.png" style="height: 40px; width: 40px;" class="logo"></div> -->
+
+                <div class="sticky-nav-option">
+                   <button class="badge" id="explore">Explore Premium</button>
+                   <button class="badge" id="install"><i class="fa-regular fa-circle-down" style="color: black; margin-right: 2px;"></i>Install App</button>
+                   <i class="fa-regular fa-user"></i>
+                </div>
+
+            </div>
+
+            <div class="album">
+
+                <h2 class="recent">Recently Played</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="./assets(spotify)/card2img.jpeg">
+                        <h3>Mahiye jinna sona</h3>
+                        <p>Darshan raval</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets(spotify)/card3img.jpeg">
+                        <h3>Mere pass tum ho</h3>
+                        <p>Nusrat fateh ali khan</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets(spotify)/card4img.jpeg">
+                        <h3>Alter ego Naa Ready</h3>
+                        <p>Leo</p>
+                    </div>
+                </div>
+
+                <h2 class="heading2">Trending Now</h2>
+                <div class="card-container2">
+                    <div class="card">
+                        <img src="./assets(spotify)/card1img.jpeg">
+                        <h3>Top 50 - Global</h3>
+                        <p>Yours daily updates of<br> most played tracks...</p>
+                    </div>
+                </div>
+
+                <h2 class="heading3">Top Songs</h2>
+                <div class="card-container3">
+                    <div class="card">
+                        <img src="./assets(spotify)/card5img.jpeg">
+                        <h3>Top Song Global</h3>
+                        <p>Top Song Global</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets(spotify)/card6img.jpeg">
+                        <h3>Top Song India</h3>
+                        <p>Top Song India</p>
+                    </div>
+                </div>
+               
+                <h2 class="heading4">Artist</h2>
+                <div class="card-container4">
+                    <div class="card">
+                        <img src="./assets(spotify)/Naman(red checks) photo.jpg">
+                        <h3>Naman Patel</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./assets(spotify)/Damita photo.jpg">
+                        <h3>Damita Pathak</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./assets(spotify)/priyanshi photo.jpg">
+                        <h3>Priyanshi Yadav</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./assets(spotify)/sachin photo.jpg">
+                        <h3>Sachin Singh Rajawat</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./assets(spotify)/aditya photo.jpg">
+                        <h3>Aditya Verma</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./assets(spotify)/mayank photo.jpg">
+                        <h3>Mayank Gour</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./assets(spotify)/aman photo.jpg">
+                        <h3>Aman Gour</h3>
+                    </div>
+                </div>
+
+            </div>
+      </div>
+
+
+        <div class="music-player">
+
+            <div class="left">
+               <div class="miniplayer">
+                <img src="./assets(spotify)/card2img.jpeg">
+                <h4>Mahi Jinna Sona</h4>
+                </div>
+            </div>
+
+            <div class="center">
+                <div class="player-control">
+                    <img src="./assets(spotify)/player_icon1.png" class="player-control-icon">
+                    <img src="./assets(spotify)/player_icon2.png" class="player-control-icon">
+                    <img src="./assets(spotify)/player_icon3.png" class="player-control-icon" style="opacity: 1; height: 30px; width: 30px;" >
+                    <img src="./assets(spotify)/player_icon4.png" class="player-control-icon">
+                    <img src="./assets(spotify)/player_icon5.png" class="player-control-icon">
+                </div>
+                <div class="progress-bar">
+                    <span>00:00</span>
+                    <input type="range" min="0" max="100" class="range">
+                    <span>4:44</span>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="icons">
+                <i class="fa-solid fa-volume-high"></i>
+                <i class="fa-solid fa-volume-xmark"></i>
+                <i class="fa-solid fa-headphones"></i>
+                <i class="fa-solid fa-music"></i>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
