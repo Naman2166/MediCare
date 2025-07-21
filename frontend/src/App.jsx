@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useContext} from 'react'
 import { Route, Routes, useLocation } from 'react-router-dom'
 import Home from './pages/Home'
 import Doctor from './pages/Doctor'
@@ -14,14 +14,23 @@ import Portfolio from './pages/Portfolio'
 import { ToastContainer, toast } from 'react-toastify';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 // import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import { AppContext } from './context/AppContext'
+import Loader from './components/Loader'
+
 
 const App = () => {
 
   const location = useLocation()       //to get current route (here we are using for hidding footer in login page)
+  const { loading } = useContext(AppContext);
 
   return (
-    <div className='mx-0 sm:mx-[0%]'>               {/* mx => horizontal margin */}
-    
+    <>
+     
+     {loading && <Loader message="Connecting to Server, Please Wait..." />} {/* global loader */}
+   
+
+    <div className='mx-0 sm:mx-[0%]'>               {/* mx => horizontal margin */}  
+
     <ToastContainer autoClose={2000}  toastStyle={{ backgroundColor: 'black', color: 'white' }} closeOnClick />                              {/* this occupies some space for showing toast Notification */}
     {/* <Navbar />                                      rendering Navbar component (it will be visible in all the pages) */}
     {location.pathname !== '/login' && <Navbar />  }              {/* footer will be shown when route is not equal to "/login" (ie on login page footer will not visible) */}   
@@ -43,6 +52,7 @@ const App = () => {
      {/* <Footer /> */}
      
     </div>
+  </>  
   )
 }
 
