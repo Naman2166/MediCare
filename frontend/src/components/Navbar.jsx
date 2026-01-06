@@ -50,9 +50,9 @@ const Navbar = () => {
 
         <div className='flex items-center gap-4'>
 
-          <div onClick={()=>{navigate('/chatbot')}} >
+          {/* <div onClick={()=>{navigate('/disease-predictor-model')}} >
           <img src={assets.chatbot_image} alt='' className='cursor-pointer w-14  md:translate-x-2 lg:translate-x-0 hover:scale-105' />
-          </div>
+          </div> */}
 
            
            {

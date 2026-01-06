@@ -16,6 +16,7 @@ import { ToastContainer, toast } from 'react-toastify';
 // import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import { AppContext } from './context/AppContext'
 import Loader from './components/Loader'
+import DiseasePredictorModel from './pages/DiseasePredictorModel'
 
 
 const App = () => {
@@ -46,9 +47,10 @@ const App = () => {
        <Route path='/my-appointments' element={<MyAppointments />} />
        <Route path='/appointment/:docId' element={<Appointment />} />
        <Route path='/portfolio' element={<Portfolio />} />
+       <Route path='/disease-predictor-model' element={<DiseasePredictorModel />} />
     </Routes>
 
-     {location.pathname !== '/login' && location.pathname !== '/my-profile' &&<Footer />  }              {/* footer will be shown when route is not equal to "/login" (ie on login page footer will not visible) */}   
+     {location.pathname !== '/login' && location.pathname !== '/disease-predictor-model' && location.pathname !== '/my-profile' &&<Footer />  }              {/* footer will be shown when route is not equal to "/login" (ie on login page footer will not visible) */}   
      {/* <Footer /> */}
      
     </div>

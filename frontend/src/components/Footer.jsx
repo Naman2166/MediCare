@@ -48,7 +48,9 @@ const Footer = () => {
                <div className="sm:w-1/3"></div>                                                                       {/* we have divided footer into 3 equal parts for adjustment of text of both 'p' tag */}
                <p className="w-1/2 sm:w-1/3 text-left sm:text-center ">© 2025 MediCare - All Rights Reserved.</p>
                <p className="w-1/2 sm:w-1/3 text-right sm:text-right ">
-                  <span onClick={()=>{navigate('/portfolio'); scrollTo(0,0)}} className="inline-flex items-center gap-1 px-4 py-1 border-2 border-black rounded-md font-medium bg-blue-100 cursor-pointer hover:bg-gray-800 hover:text-white transform transition-transform hover:scale-105">
+               
+                       {/* onClick={()=>{navigate('/portfolio'); scrollTo(0,0)}} */}
+                  <span className="inline-flex items-center gap-1 px-4 py-1 border-2 border-black rounded-md font-medium bg-blue-100 cursor-pointer hover:bg-gray-800 hover:text-white transform transition-transform hover:scale-105">
                    made with  <span className="text-red-500 text-lg"> ❤ </span>  Naman </span>
                </p>
 
